@@ -1,0 +1,529 @@
+
+body{
+    background-color: black;
+    }
+
+.title{
+    position: absolute;
+    font-family: Georgia, serif;
+    left: 550px;
+    top: 100px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 30px;
+    color:black;
+}
+.search-bar input {
+  position: absolute;
+  top:45px;
+  left: 370px;
+  width: 900px;
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.286);
+  outline: none;
+  color: #fff;
+  font-size: large;
+}
+.navimg {
+  position: absolute;
+  top: 5px;
+  left: 125px;
+  width: 200px;
+}
+.mainimg img{
+  width: 1500px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  position: absolute;
+  top: 900px;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  display:flex;
+  object-fit: contain;
+  transition: transform 450ms;
+}
+
+.container .card1 {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: black;
+}
+
+.container .card1 h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+.container .card1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .card1:hover {
+  cursor: pointer;
+}
+
+.container .card1 img:hover {
+  opacity: 0.2;
+}
+
+.container .card1:hover h3 {
+  opacity: 1;
+}
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(255, 255, 255);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fffefe;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background:black ;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+ 
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.searchbutton{
+  width: 40px;
+  position: absolute;
+  top: 45px;
+  left: 1230px;
+}
+.dotted{
+  width: 65px;
+  position: absolute;
+  top: 50px;
+  left: 1350px;
+}
+.text h1{
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 155px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xxx-large;
+}
+ .button {
+  position: absolute;
+  top: 450px;
+  left: 155px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #464242;
+  top: 0%;
+  left: -100%;
+  scale: 1;
+  border-radius: inherit;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button span {
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button span::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  color: #000000;
+  width: 0;
+  overflow: hidden;
+}
+
+.button:hover span::before {
+  width: 100%;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0.4s;
+}
+
+.button:hover::before {
+  scale: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.button:hover {
+  border-color: transparent;
+}
+
+.button:active {
+  scale: 0.9;
+}
+.button2 {
+  position: absolute;
+  top: 450px;
+  left: 355px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #464242;
+  top: 0%;
+  left: -100%;
+  scale: 1;
+  border-radius: inherit;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button2 span {
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button2 span::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  color: #000000;
+  width: 0;
+  overflow: hidden;
+}
+
+.button2:hover span::before {
+  width: 100%;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0.4s;
+}
+
+.button2:hover::before {
+  scale: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.button2:hover {
+  border-color: transparent;
+}
+
+.button2:active {
+  scale: 0.9;
+}
+.text1{
+  color: #fff;
+  position: absolute;
+  top: 540px;
+  left: 155px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight:100;
+}
+.head1{
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.head1 p{
+  position: absolute;
+  top: 840px;
+  left: 15px;
+  font-size: 25px;
+  font-weight: 100;
+}
+.head1 h1{
+  position: absolute;
+  top: 1200px;
+  left: 9px;
+  font-size: 25px;
+  font-weight: 100;
+}
+.head1 h2{
+  position: absolute;
+  top: 1570px;
+  left: 9px;
+  font-size: 25px;
+  font-weight: 100;
+}
+.slider-container {
+  position: absolute;
+  top: 1275px;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+
+  margin-bottom: 1rem;
+  scroll-behavior: smooth;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 200px;
+  height: 300px;
+  margin-right: 15px;
+  background-color: rgb(0, 0, 0);
+}
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-container .card h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  font-family: 'Overpass', sans-serif;
+}
+.card-container .card:hover {
+  cursor: pointer;
+}
+
+.card-container .card img:hover {
+  opacity: 0.2;
+}
+
+.card-container .card:hover h3 {
+  opacity: 1;
+}
+.slider-container2 {
+  position: absolute;
+  top: 1645px;
+  overflow: hidden;
+}
+.card-container2 {
+  display: flex;
+
+  margin-bottom: 1rem;
+  scroll-behavior: smooth;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.card2 {
+  flex-shrink: 0;
+  width: 200px;
+  height: 300px;
+  margin-right: 15px;
+  background-color: rgb(0, 0, 0);
+}
+.card2Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-container2 .card2 h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  font-family: 'Overpass', sans-serif;
+}
+.card-container2 .card2:hover {
+  cursor: pointer;
+}
+
+.card-container2 .card2 img:hover {
+  opacity: 0.2;
+}
+
+.card-container2 .card2:hover h3 {
+  opacity: 1;
+}
+.footer-row-logo1{
+  width: 30px;
+  position: absolute;
+   left: 90px;
+   top:2000px;
+}
+.footer-row-logo2{
+  width: 40px;
+  position: absolute;
+ left: 140px;
+ top:2000px;
+}
+
+.footer-row-logo3{
+  width: 40px;
+  position: absolute;
+ left: 200px;
+ top:2005px;
+}
+
+.footer-row-logo4{
+  width: 40px;
+  position: absolute;
+ left: 260px;
+ top:2001px;
+}
+
+
+.footer-extra{
+  position: absolute;
+  top: 2050px;
+  left: 40px;
+}
+
+.footer-extra-row{
+ gap:40px; 
+}
