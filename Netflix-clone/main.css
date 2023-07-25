@@ -1,3 +1,6 @@
+*{
+  margin: 0px;
+}
 
 body{
     background-color: black;
@@ -107,7 +110,7 @@ body {
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: grey;
   
   transition: color 0.3s ease;
 }
@@ -187,7 +190,7 @@ body {
 {
   position: absolute;
   width: 300px;
-  height: 600px;
+  height: 125vmax;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
