@@ -52,7 +52,6 @@ body {
 .container {
   position: absolute;
   top: 900px;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   gap: 15px;
@@ -190,7 +189,7 @@ body {
 {
   position: absolute;
   width: 300px;
-  height: 125vmax;
+  height: 125vw;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
